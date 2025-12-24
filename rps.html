@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS game 2.0</title>
+    <script src="static/js/rps.js"></script>
+</head>
+<body>
+    <h1 id="title">Choose your fighter!</h1>
+    <img id="winImage" style="height: 200px; display: none;" src="static/img/winner.jpg" >
+    <img id="loseImage" style="height: 550px; display: none" src="static/img/loser.webp" >
+    <img id="drawImage" style="height: 200px; display: none" src="static/img/tie.gif" >
+    <h2 id="gameLog"></h2>
+
+        <button  id="rockBtn" onclick="playerMove('rock')" value="rock">
+            <img style="height: 150px;" src="static/img/rock.webp" alt="rock">
+        </button>
+
+        <button  id="paperBtn" onclick="playerMove('paper')" value="rock">
+            <img style="height: 150px;" src="static/img/paper.jpg" alt="paper">
+        </button>
+        <button  id="scissorsBtn" onclick="playerMove('scissors')" value="rock">
+            <img style="height: 150px;" src="static/img/scissors.jpg" alt="scissors">
+        </button>
+
+    <h3 id="totalPlays">There have not been any plays yet</h3>
+    <table>
+        <tr>
+            <th>Wins</th>
+            <th>Draws</th>
+            <th>Losses</th>
+        </tr>
+        <tr></tr>
+            <td id="winsCell"></td>
+            <td id="drawsCell"></td>
+            <td id="lossesCell"></td>
+        <tr>
+            <td id="winsPercentCell"></td>
+            <td id="drawsPercentCell"></td>
+            <td id="lossesPercentCell"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
